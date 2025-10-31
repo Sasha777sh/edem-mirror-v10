@@ -9,4 +9,5 @@ if (!databaseUrl || databaseUrl.startsWith('${{') || databaseUrl.trim() === '') 
     process.env.DATABASE_URL = 'postgresql://placeholder:placeholder@localhost:5432/placeholder';
 }
 
-export const sql = postgres(process.env.DATABASE_URL);
+// Type-safe database connection
+export const sql = postgres(process.env.DATABASE_URL!);
