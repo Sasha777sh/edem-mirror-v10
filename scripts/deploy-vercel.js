@@ -5,23 +5,28 @@ const { execSync } = require('child_process');
 console.log('🚀 Starting EDEM Mirror v10 deployment to Vercel...');
 
 try {
-  // Check if we're logged in to Vercel
-  console.log('🔍 Checking Vercel login status...');
-  const whoami = execSync('vercel whoami', { encoding: 'utf8' });
-  console.log(`✅ Logged in as: ${whoami.trim()}`);
-  
-  // Link to existing project or create new one
-  console.log('🔗 Linking to Vercel project...');
-  execSync('vercel link --yes', { stdio: 'inherit' });
-  
-  // Deploy to production
-  console.log('🚀 Deploying to production...');
-  execSync('vercel deploy --prod --yes', { stdio: 'inherit' });
-  
-  console.log('🎉 Deployment completed successfully!');
+    // Check if we're logged in to Vercel
+    console.log('🔍 Checking Vercel login status...');
+    try {
+        const whoami = execSync('vercel whoami', { encoding: 'utf8' });
+        console.log(`✅ Logged in as: ${whoami.trim()}`);
+    } catch (error) {
+        console.log('⚠️  Not logged in to Vercel. Please log in first.');
+        process.exit(1);
+    }
+
+    // Link to existing project or create new one
+    console.log('🔗 Linking to Vercel project...');
+    execSync('vercel link --yes', { stdio: 'inherit' });
+
+    // Deploy to production
+    console.log('🚀 Deploying to production...');
+    execSync('vercel deploy --prod --yes', { stdio: 'inherit' });
+
+    console.log('🎉 Deployment completed successfully!');
 } catch (error) {
-  console.error('❌ Deployment failed:', error.message);
-  process.exit(1);
+    console.error('❌ Deployment failed:', error.message);
+    process.exit(1);
 }
 
 /**
