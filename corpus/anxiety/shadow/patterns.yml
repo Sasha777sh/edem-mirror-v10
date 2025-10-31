@@ -1,0 +1,26 @@
+anxiety_patterns:
+  - title: "Anxiety Spiral Recognition"
+    stage: "shadow"
+    symptom: "anxiety"
+    archetype: ["seeker", "healer"]
+    modality: ["body", "breath"]
+    language: "ru"
+    reading_time: 1.5
+    content: |
+      Тревога — это не враг. Это сигнал, что ты сталкиваешься с неопределенностью.
+      Она усиливается, когда ты пытаешься контролировать непредсказуемое.
+      Наблюдай за спиралью: мысли → физические ощущения → еще больше мыслей.
+      Прервать цикл можно через тело — просто почувствуй, где напряжение.
+
+  - title: "Control as Anxiety Mask"
+    stage: "shadow"
+    symptom: "anxiety"
+    archetype: ["warrior", "healer"]
+    modality: ["body", "cognitive"]
+    language: "ru"
+    reading_time: 1.2
+    content: |
+      Под тревогой часто прячется иллюзия контроля.
+      Ты думаешь, что если всё продумаешь, то избежишь боли.
+      Но реальность не поддается полному контролю.
+      Тревога усиливается, когда иллюзия рушится.

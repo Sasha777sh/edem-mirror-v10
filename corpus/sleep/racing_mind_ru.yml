@@ -1,0 +1,13 @@
+title: Беспокойный ум перед сном
+stage: [shadow, truth, integration]
+symptom: [sleep, anxiety]
+archetype: [victim]
+modality: [breath, cognitive]
+lang: ru
+shadow: "Зеркало: вижу беспокойный ум. Триггер: вечерние размышления. Цена: усталость и раздражение."
+truth: "Тебе важно обработать день. Ты закрываешь это через rumination, потому что боишься упустить что-то важное."
+integration:
+  practice_key: "breath/box"
+  hint: "Вдох 4 сек, удержание 4 сек, выдох 4 сек, пауза 4 сек. 5 кругов."
+text: |
+  Беспокойный ум перед сном — способ ума обработать незавершенные дела дня.

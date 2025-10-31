@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EDEM Living Agent — Demo</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#0b0c10; color:#e6edf3; margin:0; }
+      .wrap { max-width: 780px; margin: 0 auto; padding: 24px; }
+      .card { background:#111217; border:1px solid #22242c; border-radius: 12px; padding:16px; }
+      .row { display:flex; gap:8px; }
+      input, button, select { border-radius:10px; border:1px solid #303342; background:#0f1116; color:#e6edf3; padding:10px 12px; }
+      input, select { flex:1; }
+      button { cursor:pointer; }
+      .log { margin-top: 12px; height: 420px; overflow:auto; padding: 12px; background:#0f1116; border:1px solid #22242c; border-radius: 10px; }
+      .msg { margin: 10px 0; }
+      .u { color:#99c1ff }
+      .a { color:#9ee493 }
+      .small { color:#9aa0a6; font-size: 12px; }
+      .toolbar { display:flex; gap:8px; margin-top:10px; }
+      .badge { display:inline-block; padding:2px 8px; border-radius:8px; background:#1a2030; color:#cbd5e1; font-size:12px; margin-left:6px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>EDEM Living Agent — Demo <span class="badge" id="phase"></span></h1>
+      <div class="card">
+        <div class="row">
+          <input id="userId" value="local-user-1" />
+          <select id="archetype">
+            <option value="">архетип (optional)</option>
+            <option>wanderer</option>
+            <option>guardian</option>
+            <option>seer</option>
+            <option>artisan</option>
+          </select>
+          <button id="setArch">Set</button>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <input id="msg" placeholder="Напишите что чувствуете…" />
+          <button id="send">Send</button>
+          <button id="silence">Silence</button>
+        </div>
+        <div class="toolbar">
+          <span class="small">Подсказка: попробуйте фразы «Я чувствую, что теряю себя», «Кажется, понял», «Мне больно» — фазы/рана реагируют.</span>
+        </div>
+        <div class="log" id="log"></div>
+      </div>
+    </div>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const log = (html) => { const d = document.createElement('div'); d.className='msg'; d.innerHTML = html; $('log').appendChild(d); $('log').scrollTop = $('log').scrollHeight; };
+      const setPhase = (p, e, t) => { $('phase').textContent = `phase: ${p} | energy: ${e.toFixed(2)} | trauma: ${t || '—'}` };
+
+      $('send').onclick = async () => {
+        const userId = $('userId').value.trim() || 'local-user-1';
+        const message = $('msg').value.trim();
+        if (!message) return;
+        log(`<span class='u'>Вы</span>: ${message}`);
+        $('msg').value = '';
+        const res = await fetch('/api/respond', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ userId, message }) });
+        const data = await res.json();
+        setPhase(data.phase, data.energy, data.trauma);
+        log(`<span class='a'>EDEM</span>: ${data.response.replace(/\n/g, '<br/>')}<div class='small'>Exit symbol: ${data.exitSymbol}</div>`);
+      };
+
+      $('silence').onclick = async () => {
+        const res = await fetch('/api/silence');
+        const data = await res.json();
+        log(`<span class='a'>EDEM (silence)</span>: ${data.response.replace(/\n/g, '<br/>')}`);
+      };
+
+      $('setArch').onclick = async () => {
+        const userId = $('userId').value.trim() || 'local-user-1';
+        const archetype = $('archetype').value.trim();
+        if (!archetype) return;
+        const res = await fetch('/api/archetype', { method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ userId, archetype }) });
+        if (res.ok) log(`<span class='small'>🎭 Архетип установлен: ${archetype}</span>`);
+      };
+
+      // init
+      (async () => {
+        const res = await fetch('/health'); const d = await res.json();
+        log(`<span class='small'>health</span>: ${d.status} @ ${d.ts}`);
+      })();
+    </script>
+  </body>
+  </html>
+

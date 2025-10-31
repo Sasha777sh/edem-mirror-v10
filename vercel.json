@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "includeFiles": [
+          "next.config.mjs",
+          ".env",
+          ".env.production"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/telegram/webhook",
+      "dest": "/api/telegram/webhook"
+    },
+    {
+      "src": "/api/stripe/webhook",
+      "dest": "/api/stripe/webhook"
+    },
+    {
+      "src": "/api/crypto/webhook",
+      "dest": "/api/crypto/webhook"
+    },
+    {
+      "src": "/api/yookassa/webhook",
+      "dest": "/api/yookassa/webhook"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  }
+}

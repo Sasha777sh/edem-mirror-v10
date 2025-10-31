@@ -1,0 +1,28 @@
+anxiety_integration_practices:
+  - title: "Body Anchoring Practice"
+    stage: "integration"
+    symptom: "anxiety"
+    archetype: ["healer", "child"]
+    modality: ["body"]
+    language: "ru"
+    reading_time: 3.0
+    content: |
+      Практика (3 минуты):
+      1. Положи руки на грудь и живот
+      2. Замедли дыхание до 4 секунд вдох — 6 секунд выдох
+      3. С каждым выдохом повторяй: "Я здесь. Я безопасен"
+      4. Завтра спроси себя: стал ли уровень тревоги ниже на 1 балл?
+
+  - title: "Uncertainty Acceptance"
+    stage: "integration"
+    symptom: "anxiety"
+    archetype: ["seeker", "warrior"]
+    modality: ["cognitive", "breath"]
+    language: "ru"
+    reading_time: 2.5
+    content: |
+      Практика (2 минуты):
+      1. Запиши 3 вещи, которые ты не можешь контролировать
+      2. Для каждой скажи: "Это не моё. Я отпускаю"
+      3. Сделай 3 глубоких вдоха
+      4. Повтори завтра и отметь, что изменилось

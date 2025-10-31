@@ -1,0 +1,27 @@
+{
+  "title": "Overcoming Work Overwhelm",
+  "stage": [
+    "shadow",
+    "truth",
+    "integration"
+  ],
+  "symptom": [
+    "stress",
+    "anxiety",
+    "burnout"
+  ],
+  "archetype": [
+    "The Martyr",
+    "The Perfectionist"
+  ],
+  "modality": [
+    "cognitive",
+    "breath"
+  ],
+  "lang": "en",
+  "text": {
+    "shadow": "You find yourself constantly buried under a mountain of tasks at work. There's an ongoing feeling of pressure, with deadlines looming and expectations piling up. You're continually pushing yourself to work harder, longer, better, but it feels like it's never enough.",
+    "truth": "The root cause of this overwhelming feeling is not the amount of work you have, but the pressure you put on yourself to always be perfect, to never fail, and to carry all responsibilities on your shoulders. You're operating from a place of fear - fear of failure, fear of judgment, fear of not being enough.",
+    "integration": "Take a 3-minute break. Close your eyes and take deep, slow breaths. With each exhale, imagine releasing the pressure and expectations you've placed on yourself. With each inhale, imagine drawing in calm, peace, and the understanding that it's okay to ask for help, to delegate tasks, and to set realistic expectations for yourself."
+  }
+}

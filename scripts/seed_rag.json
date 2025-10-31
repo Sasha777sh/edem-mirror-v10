@@ -1,0 +1,416 @@
+[
+    {
+        "title": "Тревога перед сном",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anxiety",
+            "sleep"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "body",
+            "breath"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Твоё тело хочет спать, но ум гонит тебя в будущее. Цена: усталость и раздражительность. Truth: Ты хочешь безопасности, но ищешь её в контроле мыслей. Integration: 2 минуты дыхания 4-6, внимание в стопы."
+    },
+    {
+        "title": "Ревность в отношениях",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "breakup",
+            "jealousy"
+        ],
+        "archetype": [
+            "persecutor",
+            "victim"
+        ],
+        "modality": [
+            "cognitive",
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты проверяешь и подозреваешь. Цена: ты сам становишься узником. Truth: Ты хочешь быть выбранным и значимым. Integration: Напиши 3 вещи, которые делают тебя ценным вне отношений."
+    },
+    {
+        "title": "Обесценивание себя",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "depression",
+            "low_self_worth"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive",
+            "breath"
+        ],
+        "lang": "ru",
+        "text": "Shadow: 'Я никто, я не умею'. Цена: ты теряешь энергию даже начать. Truth: Ты хочешь признания, но не даёшь его себе. Integration: Запиши 3 простых действия, которые ты сделал сегодня."
+    },
+    {
+        "title": "Агрессия на близких",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anger",
+            "family"
+        ],
+        "archetype": [
+            "persecutor"
+        ],
+        "modality": [
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты срываешься на самых близких. Цена: вина и дистанция. Truth: Ты хочешь быть услышанным. Integration: 30 секунд ударь подушку, потом скажи 'мне важно' вместо 'ты всегда'."
+    },
+    {
+        "title": "Перфекционизм",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anxiety",
+            "burnout"
+        ],
+        "archetype": [
+            "rescuer"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты ждёшь идеального момента. Цена: ты не начинаешь. Truth: Ты хочешь контроля и безопасности. Integration: Сделай задачу на 70% и остановись. Заметишь, что мир не рухнул."
+    },
+    {
+        "title": "Прокрастинация",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "avoidance",
+            "burnout"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive",
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты откладываешь и залипаешь. Цена: ты теряешь время. Truth: Ты хочешь лёгкости, но выбираешь бегство. Integration: Сделай 2 минуты задачи, таймер включён."
+    },
+    {
+        "title": "Страх расставания",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "breakup",
+            "anxiety"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "breath",
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты держишься за человека любой ценой. Цена: ты теряешь себя. Truth: Тебе нужна опора, но ты путаешь её с другим человеком. Integration: Скажи вслух 'я есть опора'."
+    },
+    {
+        "title": "Вина за ошибки",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "guilt",
+            "shame"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты крутишь ошибки снова и снова. Цена: ты застреваешь в прошлом. Truth: Ты хочешь быть чистым и достойным. Integration: Запиши 'урок → шаг' вместо 'ошибка → вина'."
+    },
+    {
+        "title": "Страх осуждения",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anxiety",
+            "social"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "breath"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты боишься быть увиденным. Цена: ты прятался. Truth: Ты хочешь принятия. Integration: 5 вдохов-выдохов, проговаривая 'я имею право быть'."
+    },
+    {
+        "title": "Зависимость от одобрения",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anxiety",
+            "self_worth"
+        ],
+        "archetype": [
+            "rescuer",
+            "victim"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты живёшь ради чужих лайков. Цена: ты теряешь себя. Truth: Ты хочешь быть значимым. Integration: Напиши 1 вещь, которую ты ценишь в себе без свидетелей."
+    },
+    {
+        "title": "Обида на родителей",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "family",
+            "anger"
+        ],
+        "archetype": [
+            "victim",
+            "persecutor"
+        ],
+        "modality": [
+            "cognitive",
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты хранишь обиду годами. Цена: ты несвободен. Truth: Ты хочешь признания и тепла. Integration: Напиши письмо 'я злюсь, потому что хотел любви'. Не отправляй."
+    },
+    {
+        "title": "Низкая энергия",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "burnout",
+            "depression"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты лежишь и обвиняешь себя в лени. Цена: ты не действуешь. Truth: Тебе нужен отдых. Integration: Встань, встряхни руки и ноги 1 минуту."
+    },
+    {
+        "title": "Контроль в отношениях",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "breakup",
+            "control"
+        ],
+        "archetype": [
+            "persecutor"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты хочешь знать каждый шаг другого. Цена: ты убиваешь близость. Truth: Ты боишься потерять связь. Integration: Напиши 'я доверяю на 1 час' и отпусти контроль."
+    },
+    {
+        "title": "Самокритика",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "self_worth",
+            "anxiety"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: 'Ты опять всё испортил'. Цена: ты себя уничтожаешь. Truth: Ты хочешь расти, но давишь на себя. Integration: Замени 'я должен' на 'я выбираю'."
+    },
+    {
+        "title": "Страх будущего",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anxiety",
+            "future"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "breath",
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты рисуешь катастрофы в голове. Цена: ты не живёшь сейчас. Truth: Ты хочешь безопасности. Integration: Опиши 3 факта из настоящего момента."
+    },
+    {
+        "title": "Чувство одиночества",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "loneliness",
+            "depression"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive",
+            "body"
+        ],
+        "lang": "ru",
+        "text": "Shadow: 'Я никому не нужен'. Цена: ты закрываешься. Truth: Ты хочешь связи. Integration: Напиши 1 имя, кому можешь написать прямо сейчас."
+    },
+    {
+        "title": "Зависть к успеху других",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "jealousy",
+            "social"
+        ],
+        "archetype": [
+            "victim",
+            "persecutor"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты сравниваешь себя и злишься. Цена: ты не радуешься. Truth: Ты хочешь признания и ресурса. Integration: Напиши 1 шаг, что можешь взять у них как вдохновение."
+    },
+    {
+        "title": "Финансовый страх",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "money",
+            "anxiety"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: 'Денег не хватит никогда'. Цена: ты не решаешься. Truth: Ты хочешь безопасности. Integration: Выпиши 3 реальные цифры (доход, траты, остаток)."
+    },
+    {
+        "title": "Несправедливость мира",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "anger",
+            "social"
+        ],
+        "archetype": [
+            "persecutor",
+            "victim"
+        ],
+        "modality": [
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты кипишь: 'всё против меня'. Цена: ты не строишь. Truth: Ты хочешь силы и влияния. Integration: Сделай 1 поступок в зоне твоего контроля."
+    },
+    {
+        "title": "Страх смерти",
+        "stage": [
+            "shadow",
+            "truth",
+            "integration"
+        ],
+        "symptom": [
+            "existential",
+            "anxiety"
+        ],
+        "archetype": [
+            "victim"
+        ],
+        "modality": [
+            "breath",
+            "cognitive"
+        ],
+        "lang": "ru",
+        "text": "Shadow: Ты боишься исчезнуть. Цена: ты не живёшь. Truth: Ты хочешь смысла. Integration: 1 минута дыхания, повторяя 'я живу сейчас'."
+    }
+]

@@ -1,0 +1,26 @@
+anxiety_root_causes:
+  - title: "Root Cause Exploration"
+    stage: "truth"
+    symptom: "anxiety"
+    archetype: ["seeker", "child"]
+    modality: ["body", "cognitive"]
+    language: "ru"
+    reading_time: 2.0
+    content: |
+      Глубже: тревога — это страх потерять безопасность.
+      Ты ищешь её в контроле, но безопасность внутри — не результат внешних обстоятельств.
+      Она рождается, когда ты принимаешь неопределенность как часть жизни.
+      Что ты пытаешься контролировать прямо сейчас?
+
+  - title: "Choice Context"
+    stage: "truth"
+    symptom: "anxiety"
+    archetype: ["warrior", "healer"]
+    modality: ["body", "breath"]
+    language: "ru"
+    reading_time: 1.8
+    content: |
+      В тревоге ты прячешь потребность в свободе.
+      Страх неопределенности мешает тебе сделать шаг.
+      Но каждый день ты выбираешь: жить в страхе или в доверии.
+      Где сейчас ты можешь выбрать доверие?
