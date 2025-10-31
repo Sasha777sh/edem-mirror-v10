@@ -1,43 +1,27 @@
 #!/usr/bin/env node
 
-// Script to deploy to Vercel
 const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
 
-// Load environment variables from .env file
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
-
-console.log('🚀 Starting EDEM deployment to Vercel...');
+console.log('🚀 Starting EDEM Mirror v10 deployment to Vercel...');
 
 try {
-    // Check if Vercel CLI is installed
-    try {
-        execSync('vercel --version', { stdio: 'pipe' });
-        console.log('✅ Vercel CLI is installed');
-    } catch (error) {
-        console.log('📦 Installing Vercel CLI...');
-        execSync('npm install -g vercel', { stdio: 'inherit' });
-    }
-
-    // Login to Vercel (will prompt for authentication if needed)
-    console.log('🔐 Logging in to Vercel...');
-    execSync('vercel login', { stdio: 'inherit' });
-
-    // Deploy to production
-    console.log('🌐 Deploying to Vercel production...');
-    const deployOutput = execSync('vercel --prod --yes', {
-        cwd: path.resolve(__dirname, '..'),
-        stdio: 'pipe',
-        encoding: 'utf-8'
-    });
-
-    console.log('✅ Deployment completed successfully!');
-    console.log('🌍 Deployment URL:', deployOutput.match(/https:\/\/[^\s]+/)?.[0] || 'Check output above');
-
+  // Check if we're logged in to Vercel
+  console.log('🔍 Checking Vercel login status...');
+  const whoami = execSync('vercel whoami', { encoding: 'utf8' });
+  console.log(`✅ Logged in as: ${whoami.trim()}`);
+  
+  // Link to existing project or create new one
+  console.log('🔗 Linking to Vercel project...');
+  execSync('vercel link --yes', { stdio: 'inherit' });
+  
+  // Deploy to production
+  console.log('🚀 Deploying to production...');
+  execSync('vercel deploy --prod --yes', { stdio: 'inherit' });
+  
+  console.log('🎉 Deployment completed successfully!');
 } catch (error) {
-    console.error('❌ Deployment failed:', error.message);
-    process.exit(1);
+  console.error('❌ Deployment failed:', error.message);
+  process.exit(1);
 }
 
 /**
